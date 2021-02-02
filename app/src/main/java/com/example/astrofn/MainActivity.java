@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         programAdapter = new ProgramAdapter(this,planets,descriptions,images);
-        recyclerView.setAdapter(programAdapter);
+        recyclerView.setAdapter(programAdapter) ;
 
 
 

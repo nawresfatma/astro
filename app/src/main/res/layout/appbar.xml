@@ -8,6 +8,8 @@
     android:background="#240112"
     android:id="@+id/action_bar"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+
     >
 
 </androidx.appcompat.widget.Toolbar>
