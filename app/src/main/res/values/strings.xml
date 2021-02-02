@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
+    <string name="app_name">Astro</string>
+=======
     <string name="app_name">astroFN</string>
+>>>>>>> 74dd42e49aea8d6c47edc423089f78924fb396e5
 </resources>
