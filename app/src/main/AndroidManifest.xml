@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
-    package="com.example.astro">
-=======
-    package="com.example.astrofn">
->>>>>>> 74dd42e49aea8d6c47edc423089f78924fb396e5
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.astro">
+
 
     <application
         android:allowBackup="true"
