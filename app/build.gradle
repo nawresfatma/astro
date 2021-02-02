@@ -5,8 +5,13 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
+<<<<<<< HEAD
         applicationId "com.example.astro"
         minSdkVersion 19
+=======
+        applicationId "com.example.astrofn"
+        minSdkVersion 16
+>>>>>>> 74dd42e49aea8d6c47edc423089f78924fb396e5
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
