@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.astrofn.loginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="0dp"
+        android:layout_height="675dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:background="@drawable/custom_butt"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingStart="90dp"
+        android:paddingLeft="20dp"
+        android:textColor="#581845"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/username1"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/username1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/custom_butt"
+        android:ems="10"
+        android:hint="LOGIN"
+        android:inputType="textPersonName"
+
+        android:padding="10dp"
+        android:paddingStart="120dp"
+
+        android:paddingLeft="110dp"
+        android:textAllCaps="false"
+        android:textColor="#581845"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="373dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Vous êtes nouveau ? "
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/Cliquezici"
+        app:layout_constraintTop_toBottomOf="@+id/Signin1" />
+
+    <TextView
+        android:id="@+id/Cliquezici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="56dp"
+        android:text="Cliquez ici"
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Signin1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Signin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_butt"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Let's Start "
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="42dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="715dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="302dp"
+        android:layout_height="346dp"
+        android:layout_marginBottom="412dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
