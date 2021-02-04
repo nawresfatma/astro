@@ -2,6 +2,7 @@ package com.example.astrofn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,8 +13,8 @@ import android.widget.Toast;
 import com.example.astro.R;
 
 public class SignUp extends AppCompatActivity {
-EditText Username,Password,Email ;
-Button Signin ,Signup;
+EditText Username,Password,nom,prenom,age ;
+Button Signup;
 DataB DB;
 
     @Override
@@ -23,22 +24,31 @@ DataB DB;
         setContentView(R.layout.activity_sign_up);
         Username = (EditText) findViewById(R.id.username);
         Password = (EditText) findViewById(R.id.password);
-        Email = (EditText) findViewById(R.id.email);
-        Signin = (Button) findViewById(R.id.signin);
+        nom = (EditText) findViewById(R.id.Nom);
         Signup = (Button) findViewById(R.id.signup);
+        prenom=findViewById(R.id.prenom);
+        age=findViewById(R.id.Age);
         DB = new DataB(this);
 
         Signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String user =Username.getText().toString();
-                String pass =Password.getText().toString();
+                String Prenom = prenom.getText().toString();
+                String Nom = nom.getText().toString();
+                String user = Username.getText().toString();
+                String pass = Password.getText().toString();
+                String Age = age.getText().toString();
 
-                if(user.equals("")|pass.equals(""));
-
+                if (user.equals("") | pass.equals("") | Age.equals("") | Prenom.equals("") | Nom.equals(""))
                     Toast.makeText(SignUp.this, "Remplissez tous les champs ! ", Toast.LENGTH_SHORT).show();
-                    Boolean checkuser = DB.checkusername(user);
+                    if(Age.matches("^[a-zA-Z]+$")) {
+                        Toast.makeText(SignUp.this, "Entrez un nombre dans la case age", Toast.LENGTH_SHORT).show();
+                    }
 
+
+                else {
+
+                    Boolean checkuser = DB.checkusername(user);
                     if (checkuser == false) {
                         Boolean insert = DB.insertdata(user, pass);
                         if (insert == true) {
@@ -53,16 +63,15 @@ DataB DB;
                     }
 
                 }
-
+            }
         });
-
-
-
-
-
-
-
 
 
     }
 }
+
+
+
+
+
+

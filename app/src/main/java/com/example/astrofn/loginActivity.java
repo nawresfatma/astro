@@ -35,15 +35,15 @@ public class loginActivity extends AppCompatActivity {
                 String pass = Password.getText().toString();
 
                 if(user.equals("")||pass.equals(""))
-                    Toast.makeText(loginActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(loginActivity.this, "Remplissez Tous les champs ! ", Toast.LENGTH_SHORT).show();
                 else{
                     Boolean checkuserpass =  DB.checkpassword(user, pass);
                     if(checkuserpass==true){
-                        Toast.makeText(loginActivity.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(loginActivity.this, "Succes", Toast.LENGTH_SHORT).show();
                         Intent intent  = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(loginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(loginActivity.this, "L'utilisateur n'existe pas ", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

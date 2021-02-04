@@ -24,132 +24,126 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/custom_butt"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Mot de passe"
         android:inputType="textPassword"
         android:padding="10dp"
         android:paddingStart="90dp"
         android:paddingLeft="20dp"
         android:textColor="#581845"
-        android:textSize="27dp"
 
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="585dp" />
+        app:layout_constraintGuide_begin="68dp" />
 
 
     <EditText
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/custom_butt"
         android:ems="10"
-        android:hint="Username"
+        android:gravity="center"
+        android:hint="Login"
+
         android:inputType="textPersonName"
 
         android:padding="10dp"
-        android:paddingStart="90dp"
-
         android:paddingLeft="110dp"
         android:textAllCaps="false"
         android:textColor="#581845"
         android:textSize="27dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/Age"
+        app:layout_constraintStart_toStartOf="@+id/Age"
+        app:layout_constraintTop_toBottomOf="@+id/Age" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/Age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_butt"
         android:ems="10"
-        android:hint="Email Address"
-
+        android:gravity="center"
+        android:hint="Age"
         android:inputType="textPersonName"
         android:padding="10dp"
-
-        android:paddingStart="80dp"
         android:paddingLeft="110dp"
         android:textAllCaps="false"
         android:textColor="#581845"
         android:textSize="27dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintEnd_toEndOf="@+id/prenom"
+        app:layout_constraintStart_toStartOf="@+id/prenom"
+        app:layout_constraintTop_toBottomOf="@+id/prenom" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="364dp" />
-
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/custom_butt"
-        android:paddingStart="15dp"
-        android:paddingEnd="15dp"
-        android:text="Sign In"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/custom_butt"
         android:text="sign Up"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toEndOf="@+id/signin"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
         app:layout_constraintTop_toBottomOf="@+id/password" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="767dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="25dp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="238dp"
         android:layout_height="295dp"
-        android:layout_marginBottom="392dp"
         android:src="@drawable/astrologin"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.376"
-        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_butt"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Prenom"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingLeft="110dp"
+
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/Nom"
+        app:layout_constraintStart_toStartOf="@+id/Nom"
+        app:layout_constraintTop_toBottomOf="@+id/Nom" />
+
+    <EditText
+        android:id="@+id/Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/custom_butt"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingLeft="110dp"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
