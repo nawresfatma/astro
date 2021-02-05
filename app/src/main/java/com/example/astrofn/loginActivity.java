@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.astro.Aide;
 import com.example.astro.MainActivity;
 import com.example.astro.R;
 
@@ -18,7 +19,7 @@ import java.lang.reflect.Type;
 
 public class loginActivity extends AppCompatActivity {
   EditText Username,Password;
-  TextView Cliquezici ,title;
+  TextView Cliquezici ,title ,aide;
   Button signin;
   DataB DB;
     @Override
@@ -30,6 +31,7 @@ public class loginActivity extends AppCompatActivity {
         signin=(Button)findViewById(R.id.Signin1);
         Cliquezici=findViewById(R.id.Cliquezici);
         title=findViewById(R.id.Title);
+        aide=findViewById(R.id.aide);
         Typeface Astro=Typeface.createFromAsset(getAssets(),"font/rowan.ttf");
         title.setTypeface(Astro);
 
@@ -66,5 +68,12 @@ public class loginActivity extends AppCompatActivity {
 
             }
         });
+        aide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Aide.class);
+                startActivity(intent );
+
+            }});
     }
 }

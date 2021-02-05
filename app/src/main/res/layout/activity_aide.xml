@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Aide">
+
+
+    <TextView
+        android:id="@+id/nawres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="312dp"
+        android:text="Hamdi Nawres "
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fatma"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fatma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp"
+        android:text="Blagui Fatma"
+        android:textColor="#fff"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nawres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="179dp"
+        app:layout_constraintEnd_toEndOf="@+id/fatma"
+        app:layout_constraintStart_toStartOf="@+id/fatma"
+        app:layout_constraintTop_toTopOf="@+id/naw"
+        app:srcCompat="@drawable/fa" />
+
+    <ImageView
+        android:id="@+id/naw"
+        android:layout_width="140dp"
+        android:layout_height="179dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/fatma"
+        app:layout_constraintEnd_toEndOf="@+id/nawres"
+        app:layout_constraintStart_toStartOf="@+id/nawres"
+        app:srcCompat="@drawable/na" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="257dp"
+        android:layout_height="534dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
