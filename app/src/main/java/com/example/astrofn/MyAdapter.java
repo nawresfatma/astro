@@ -42,10 +42,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
      holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context,SecondActivity.class);
+                Intent intent=new Intent(v.getContext(),SecondActivity.class);
                 intent.putExtra("data2",data2[position]);
-                intent.putExtra("myImage",images[position]);
-                context.startActivity(intent);
+                intent.putExtra("myImage",position);
+                v.getContext().startActivity(intent);
             }
         });
 

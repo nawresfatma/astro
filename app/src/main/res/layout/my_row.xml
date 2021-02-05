@@ -13,53 +13,51 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
-
-        <TextView
-            android:id="@+id/Listeplanete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:shadowColor="#fff"
-            android:text="Planete"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-
-            android:textColor="#DAF7A6"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/planete"
-            tools:layout_editor_absoluteY="10dp" />
 
         <ImageView
             android:id="@+id/planete"
             android:layout_width="90dp"
             android:layout_height="76dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.016"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/astrologin" />
 
         <TextView
             android:id="@+id/informations"
-            android:layout_width="21dp"
-            android:layout_height="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+
+            android:textSize="15dp"
             android:fontFamily="sans-serif-light"
             android:text="Info"
             android:textColor="#fff"
-            android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="@+id/Listeplanete"
+            app:layout_constraintTop_toBottomOf="@+id/Listeplanete" />
+
+        <TextView
+            android:id="@+id/Listeplanete"
+            android:fontFamily="@font/lobster"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#DAF7A6"
+            android:shadowColor="#fff"
+            android:text="Planete"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintStart_toEndOf="@+id/planete"
-            app:layout_constraintTop_toBottomOf="@+id/Listeplanete"
-            app:layout_constraintVertical_bias="0.797" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"

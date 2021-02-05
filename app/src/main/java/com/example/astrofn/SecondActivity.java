@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.astro.R;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity  {
    ImageView mainImageView;
-   TextView Desc;
+    int images[]={R.drawable.mercury,R.drawable.venus,R.drawable.earth,R.drawable.mars,R.drawable.jupiter,R.drawable.saturn,R.drawable.uranus,R.drawable.neptune};
+    TextView Desc;
    String data2;
    int myImage;
     @Override
@@ -30,13 +32,13 @@ public class SecondActivity extends AppCompatActivity {
     private void getData() {
         if (getIntent().hasExtra("myImage") && getIntent().hasExtra("data2")) ;
         data2=getIntent().getStringExtra("data2");
-        myImage=getIntent().getIntExtra("myImage,",1);
-
+        myImage=getIntent().getIntExtra("myImage",1);
+        Toast.makeText(SecondActivity.this,String.valueOf(myImage),Toast.LENGTH_SHORT).show();
     }
 
     private void setData() {
      Desc.setText(data2);
-     mainImageView.setImageResource(myImage);
+   mainImageView.setImageResource(images[myImage]);
 
     }
 }
