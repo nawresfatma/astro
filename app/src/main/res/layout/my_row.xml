@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,8 +33,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-         android:layout_marginRight="10dp"
-
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-light"
             android:text="Info"
             android:textColor="#fff"
             app:layout_constraintStart_toStartOf="@+id/Listeplanete"
@@ -41,14 +43,18 @@
 
         <TextView
             android:id="@+id/Listeplanete"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="16dp"
-            android:textColor="#fff"
+            android:textColor="#DAF7A6"
+            android:shadowColor="#fff"
             android:text="Planete"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintStart_toEndOf="@+id/planete"
             app:layout_constraintTop_toTopOf="parent" />
 

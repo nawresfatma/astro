@@ -14,15 +14,23 @@
         <item>Pluton</item>
     </string-array>
     <string-array name="informations">
-        <item>La plus petite planète de notre système solaire et la plus proche du Soleil..</item>
-        <item>De taille et de structure similaires à la Terre, Vénus a été appelée la jumelle de la Terre..</item>
-        <item>Notre planète natale est la troisième planète du Soleil..</item>
-        <item>Mars est un monde désertique poussiéreux, froid avec une atmosphère très mince..</item>
-        <item>Jupiter est, de loin, la plus grande planète du système solaire..</item>
-        <item>Saturne est la sixième planète du Soleil et la deuxième plus grande planète de notre système solaire.</item>
-        <item>Uranus a été découvert en 1781 par lastronome William Herschel, bien quil pensait à lorigine quil sagissait dune comète ou dune étoile</item>
+        <item>La plus petite planète de notre système
+            solaire et la plus proche du Soleil..</item>
+        <item>De taille et de structure similaires à la
+            Terre, Vénus a été appelée la jumelle de la
+            Terre..</item>
+        <item>Notre planète natale est la troisième planète
+            du Soleil..</item>
+        <item>Mars est un monde désertique poussiéreux,
+            froid avec une atmosphère très mince..</item>
+        <item>Jupiter est, de loin, la plus grande planète
+            du système solaire..</item>
+        <item>Saturne est la sixième planète du Soleil et
+            la deuxième plus grande planète de notre système solaire.</item>
+        <item>Uranus a été découvert en 1781 par lastronome William
+            Herschel, bien quil pensait à lorigine quil sagissait
+            d une comète ou dune étoile</item>
         <item>Sombre, froid et fouetté par des vents supersoniques</item>
-        <item>9</item>
     </string-array>
     Locale.getDefault().getLanguage();
     <!-- TODO: Remove or change this placeholder text -->
