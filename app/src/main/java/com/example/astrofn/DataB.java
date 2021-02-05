@@ -28,11 +28,11 @@ public class DataB extends SQLiteOpenHelper {
 
     }
     public boolean insertdata(String username,String password){
-        SQLiteDatabase BD=this.getWritableDatabase();
+        SQLiteDatabase DB=this.getWritableDatabase();
         ContentValues contentValues= new ContentValues();
         contentValues.put("username",username);
         contentValues.put("password",password);
-        long result=BD.insert("users", null,contentValues);
+        long result=DB.insert("users", null,contentValues);
         if(result==-1)return false ;
         else
             return true ;

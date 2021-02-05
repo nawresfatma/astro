@@ -53,7 +53,7 @@ DataB DB;
                         Boolean insert = DB.insertdata(user, pass);
                         if (insert == true) {
                             Toast.makeText(SignUp.this, "Registered successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), listePlanet.class);
                             startActivity(intent);
                         } else {
                             Toast.makeText(SignUp.this, "Registration failed", Toast.LENGTH_SHORT).show();
