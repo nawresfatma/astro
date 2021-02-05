@@ -1,4 +1,4 @@
-package com.example.astro;
+package com.example.astrofn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.astro.R;
 import com.example.astrofn.listePlanet;
 
 public class Aide extends AppCompatActivity {

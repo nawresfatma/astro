@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.example.astrofn.SecondActivity"></activity>
-        <activity android:name=".Aide" />
+        <activity android:name="com.example.astrofn.Aide" />
         <activity android:name="com.example.astrofn.MainActivity"
             android:parentActivityName="com.example.astrofn.listePlanet"
             android:label="Details"/>

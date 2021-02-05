@@ -11,11 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.astro.Aide;
-import com.example.astro.MainActivity;
 import com.example.astro.R;
-
-import java.lang.reflect.Type;
 
 public class loginActivity extends AppCompatActivity {
   EditText Username,Password;
