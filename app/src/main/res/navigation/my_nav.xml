@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginActivity">
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.astrofn.loginActivity"
+        android:label="Profile"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/listePlanet"
+        android:name="com.example.astrofn.listePlanet"
+        android:label="activityListe des Planetes"
+        tools:layout="@layout/activity_liste_planet" />
+    <fragment
+        android:id="@+id/quizz"
+        android:name="com.example.astro.quizz"
+        android:label="quizz"
+        tools:layout="@layout/fragment_quizz" />
+</navigation>
