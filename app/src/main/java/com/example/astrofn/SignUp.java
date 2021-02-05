@@ -35,11 +35,11 @@ DataB DB;
             public void onClick(View v) {
                 String Prenom = prenom.getText().toString();
                 String Nom = nom.getText().toString();
-                String user = Username.getText().toString();
-                String pass = Password.getText().toString();
+                String userSignup = Username.getText().toString();
+                String passSignup = Password.getText().toString();
                 String Age = age.getText().toString();
 
-                if (user.equals("") | pass.equals("") | Age.equals("") | Prenom.equals("") | Nom.equals(""))
+                if (userSignup.equals("") | passSignup.equals("") | Age.equals("") | Prenom.equals("") | Nom.equals(""))
                     Toast.makeText(SignUp.this, "Remplissez tous les champs ! ", Toast.LENGTH_SHORT).show();
                     if(Age.matches("^[a-zA-Z]+$")) {
                         Toast.makeText(SignUp.this, "Entrez un nombre dans la case age", Toast.LENGTH_SHORT).show();
@@ -48,9 +48,9 @@ DataB DB;
 
                 else {
 
-                    Boolean checkuser = DB.checkusername(user);
+                    Boolean checkuser = DB.checkusername(userSignup);
                     if (checkuser == false) {
-                        Boolean insert = DB.insertdata(user, pass);
+                        Boolean insert = DB.insertdata(userSignup, passSignup);
                         if (insert == true) {
                             Toast.makeText(SignUp.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(), listePlanet.class);
