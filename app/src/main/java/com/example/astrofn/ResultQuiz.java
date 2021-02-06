@@ -1,4 +1,4 @@
-package com.example.astro;
+package com.example.astrofn;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.astro.R;
 
 import java.util.Set;
 

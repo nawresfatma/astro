@@ -11,10 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.astro.R;
-import com.example.astro.ResultQuiz;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Random;
 

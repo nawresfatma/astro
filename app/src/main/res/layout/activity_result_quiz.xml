@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultQuiz"
+    tools:context="com.example.astrofn.ResultQuiz"
     android:background="@drawable/bg">
 
     <TextView
@@ -12,9 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:text="Resultat :"
-        android:textColor="#fff"
-        android:textSize="25dp"
+        android:text="Votre score est :"
+        android:textColor="#DAF7A6"
+        android:fontFamily="@font/dancing"
+        android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,8 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="2/3"
-        android:textColor="#fff"
-        android:textSize="25dp"
+        android:textColor="#DAF7A6"
+        android:fontFamily="@font/melanie"
+        android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -37,9 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Score totale : 10"
-        android:textColor="#fff"
-        android:textSize="18dp"
+        android:text="Score total : 10"
+        android:textColor="#DAF7A6"
+        android:textSize="25dp"
+        android:fontFamily="@font/dancing"
         app:layout_constraintEnd_toEndOf="@+id/resultat"
         app:layout_constraintStart_toStartOf="@+id/resultat"
         app:layout_constraintTop_toBottomOf="@+id/resultat" />
@@ -48,7 +51,9 @@
         android:id="@+id/astronaute"
         android:layout_width="361dp"
         android:layout_height="589dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/total"
         app:srcCompat="@drawable/result" />

@@ -4,95 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bgg"
     tools:context="com.example.astrofn.quiz">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="" />
+        android:text=""
+        tools:layout_editor_absoluteX="-109dp"
+        tools:layout_editor_absoluteY="103dp" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="330dp"
-        android:layout_height="695dp"
-        android:src="@drawable/qui"
+        android:layout_width="374dp"
+        android:layout_height="361dp"
 
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:src="@drawable/qui"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/answer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Button"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custom_butttt"
+        android:onClick="checkAnswer"
         android:padding="4dp"
+        android:text="Button"
+        android:textSize="20dp"
         android:textColor="#fff"
-        android:background="@drawable/custom_butt"
-        app:layout_constraintBottom_toTopOf="@+id/answer2"
-        app:layout_constraintEnd_toEndOf="@+id/answer2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/answer2"
-        android:onClick="checkAnswer"/>
+        app:layout_constraintEnd_toEndOf="@+id/countLabel"
+        android:fontFamily="@font/nunito"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/countLabel"
+        app:layout_constraintTop_toBottomOf="@+id/countLabel" />
 
     <Button
         android:id="@+id/answer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Button"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_butttt"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:onClick="checkAnswer"
+        android:fontFamily="@font/nunito"
         android:padding="4dp"
+        android:text="Button"
         android:textColor="#fff"
-        android:background="@drawable/custom_butt"
-        app:layout_constraintBottom_toTopOf="@+id/answer3"
-        app:layout_constraintEnd_toEndOf="@+id/answer3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/answer3"
-        android:onClick="checkAnswer"/>
+        app:layout_constraintEnd_toEndOf="@+id/answer1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/answer1"
+        app:layout_constraintTop_toBottomOf="@+id/answer1" />
 
     <Button
         android:id="@+id/answer3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:text="Button"
+        android:background="@drawable/custom_butttt"
+        android:fontFamily="@font/nunito"
+        android:onClick="checkAnswer"
+        android:textSize="20dp"
         android:padding="4dp"
+        android:text="Button"
         android:textColor="#fff"
-        android:background="@drawable/custom_butt"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="checkAnswer"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/answer2"
+        app:layout_constraintStart_toStartOf="@+id/answer2"
+        app:layout_constraintTop_toBottomOf="@+id/answer2"
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="376dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/nunito"
+        android:onClick="checkAnswer"
+        android:paddingRight="10dp"
         android:text="Question"
-        android:textColor="#fff"
+        android:textColor="#000E35"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        android:onClick="checkAnswer"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271"
+        android:layout_marginLeft="30dp" />
 
     <TextView
         android:id="@+id/countLabel"
-        android:layout_width="39dp"
+        android:layout_width="wrap_content"
         android:layout_height="36dp"
-        android:layout_marginBottom="16dp"
+        android:textSize="30dp"
+        android:layout_marginBottom="296dp"
         android:text="Label"
-        android:textColor="#fff"
-        app:layout_constraintBottom_toTopOf="@+id/answer1"
-        app:layout_constraintEnd_toEndOf="@+id/answer1"
-        app:layout_constraintStart_toStartOf="@+id/answer1" />
+        android:textColor="#DAF7A6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

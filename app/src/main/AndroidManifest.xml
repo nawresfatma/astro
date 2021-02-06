@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultQuiz"></activity>
+        <activity android:name="com.example.astrofn.ResultQuiz"></activity>
         <activity android:name="com.example.astrofn.quiz" />
         <activity android:name="com.example.astrofn.SecondActivity" />
         <activity android:name="com.example.astrofn.Aide" />
