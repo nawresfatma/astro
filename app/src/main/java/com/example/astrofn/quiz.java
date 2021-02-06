@@ -26,8 +26,8 @@ public class quiz extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray= new ArrayList<>();
     String quizData[][]={
             {"Un scientifique qui étudie les astres sappelle un","astrologue","astronaute","cosmonaute"},
-            {"Notre système solaire comporte","8 planetes","9 planetes","10planetes"},
-            {"Quelle est la première nation à avoir envoyé un satellite dans l'espace?","les Americains","les Tunisiens","les Marrocains"},
+            {"Notre système solaire comporte","8  planetes","9  planetes","10 planetes"},
+            {"Quelle est la première nation à avoir envoyé un satellite dans l'espace?", "L'Amerique","La Tunisie","L'Algérie"},
     };
 
     static final private int QUIZ_COUNT=3;
