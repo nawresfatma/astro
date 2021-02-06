@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.astrofn.SecondActivity"></activity>
+        <activity android:name=".ResultQuiz"></activity>
+        <activity android:name="com.example.astrofn.quiz" />
+        <activity android:name="com.example.astrofn.SecondActivity" />
         <activity android:name="com.example.astrofn.Aide" />
-        <activity android:name="com.example.astrofn.MainActivity"
-            android:parentActivityName="com.example.astrofn.listePlanet"
-            android:label="Details"/>
+        <activity
+            android:name="com.example.astrofn.MainActivity"
+            android:label="Details"
+            android:parentActivityName="com.example.astrofn.listePlanet" />
         <activity android:name="com.example.astrofn.SignUp" />
         <activity android:name="com.example.astrofn.loginActivity" />
         <activity android:name="com.example.astrofn.listePlanet" />
